@@ -83,9 +83,10 @@ h1{
 }
 .footer img{
 	background-color: white;
+	border-radius: 20px;
 }
 .footer img:hover{
-	background-color: red;
+	background-color: dodgerblue;
 }
 
 #window{
@@ -169,11 +170,19 @@ h1{
 	font-size: 20px;
 }
 #butn{
-	background-image: url('../img/right.png');
 	height:46px;
 	width:50px;
 	margin-left:-5px;
 	padding-top: 4px;
 	background-color: steelblue;
 	border:1px solid steelblue;
+}
+.sobot{
+	margin-top: 35px; 
+}
+.sobot img{
+	border-radius: 20px;
+}
+.sobot img:hover{
+	background-color: dodgerblue;
 }
