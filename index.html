@@ -3,6 +3,7 @@
 <head>
 <link rel="stylesheet" href="css/main.css"/>
 <title>Welcome to innoraft</title>
+<script src="js/jquery-2.2.1.js"></script>
 </head>
 <body>
 	<header id="header">
@@ -28,7 +29,8 @@
 			<div class="footer">
 				<ul>
 				<li><p>&copy; 2016 Innoraft, See our <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a></p></li>
-				<li style="float:right;padding-right: 200px;"><p>follow us on</p></li>
+				<li style="float:right;padding-right: 200px;"><p>follow us on<a href="#"><img style="margin:20px 10px 0 10px;" src="img/fb.png" /></a>
+				<a href="#"><img style="margin:0px 10px 0 10px;" src="img/tw.png"/></a></p></li>
 				</ul>
 			</div>
 		
@@ -38,13 +40,20 @@
 			<form>
 				<center>
 				<input id="ftext" type="text" placeholder="Email ID" name="email" /><br/>
-				<input id="ftext" type="password" placeholder="Password" name="pass"/><br/>
+				<input id="ftext" type="text" placeholder="Password" name="pass"/><br/>
 				<input id="button" type="submit" value="Log In to Innoraft"/>
 				</center>
 			</form>	
 		</div>
 		<div class="newsletter">
-		
+			<div id="m1"><p><span id="letter">Sign Up for the Innoraft Newsletter</span> and get our latest articles and more direct to your inbox</p>
+			</div>
+			<div class="m2">
+			<form>
+			<input id="lettermail" type="text" placeholder="email address"></input>
+			<input id="butn" type="submit" value=" ">
+			<form>
+			</div>
 		</div>
 	</div>
 	<script>
