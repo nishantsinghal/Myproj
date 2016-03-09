@@ -3,12 +3,17 @@ body{
 	box-sizing: border-box;
 	
 }
+@font-face {
+  font-family: "Kaushan";
+  src: url(../fonts/KaushanScript-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "yn";
+  src: url(../fonts/yn.ttf) format("truetype");
+}
 #header{
-	position:fixed;
-	top:0;
-	z-index: 1000;
 	width:100%;
-	background-color: azure;
+	background-color: white;
 	border-bottom: 1px solid silver;
 	height:90px;	
 }
@@ -36,51 +41,106 @@ body{
 .header-inner {
     padding: 40px;
 }
-
+#menu-trigger1 {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    float:right;
+    margin:0 20px 0 10px;
+}
+#menu1{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+.h-inner {
+    padding: 40px 40px 0 0;
+}
+.line1 {
+    width: 25px;
+    margin: 5px 0;
+    background-color: dodgerblue;
+    height: 3px;
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+.line2 {
+    width: 25px;
+    height: 3px;
+  	margin: 5px 0;
+    background-color: dodgerblue;
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg);
+}
 #log{
-	font-family: calibri;
+	font-family: Arial;
 	font-weight: bold;
-	color:steelblue;
-	font-size: 18px;
+	color:dodgerblue;
+	font-size: 14px;
+	padding-top: 2px;
 	float:right;
 }
 h2{
-	font-family: vijaya;
-	color:darkcyan;
-	font-size: 28px;
+	font-family: Kaushan;
+	color:grey;
+	font-size: 20px;
 	
 }
 #main-content{
 	position: absolute;
-	z-index: 1;
+	z-index: 0;
 	width:100%;
 	height: 100%;
 	background-color: white;
-	overflow-y: auto;
+	
 }
 #container{
 	position: absolute;
 	width: 100%;
 }
 #main-head{
-	padding:150px 0 30px 0;
+	padding:200px 0 10px 0;
+}
+.container{
+	background-color: white;
+	height: 120%
 }
 h1{
-	font-family: verdana;
-	max-width:550px;
-	color:#202020;
+	font-family: Arial;
+	max-width:500px;
+	font-weight: bold;
+	color:#46523C;
 }
 .footer{
 	margin: 350px 0 0 70px;
+	padding-bottom: 20px;
 }
 .footer p{
 	color:steelblue;
-	font-family:vijaya;
+	font-size: 12px;
+	font-family:yn;
+	font-weight: bold;
+}
+.footer a{
+	color:dodgerblue;
+}
+#para{
+	margin: 0;
+	display: inline-block;
+}
+#paraimg{
+	margin-left: 10px;
+	display: inline-block;
+	position: absolute;
+	float:right;
+}
+.soid{
+	display: inline;
+	float:right;
+	width:250px;
+	height:20%;
 }
 
-.footer ul li{
-	display: inline-block; 
-}
 .footer img{
 	background-color: white;
 	border-radius: 20px;
@@ -89,22 +149,17 @@ h1{
 	background-color: dodgerblue;
 }
 
-#window{
-	height:500px;
-	background-color:transparent;
-	border:1 solid blue; 
-}
 
 #dialog-1{
-	position: fixed;
+	position: absolute;
 	top:0;
-	z-index: 0;
-	background-color: rgba(51, 102,53, 0.9);
+	z-index: -1;
+	background-color: rgba(255,255,255, 1);
 }
 
 .fullscreen{
 	width:100%;
-	height: 100%;
+	height: 130%;
 }
 .form{
 	padding-top: 120px;
@@ -135,17 +190,20 @@ h1{
 	box-shadow: 0 0 0 2px crimson;
 }
 .newsletter{
-	width:1168px;
-	margin:70px 100px 0 100px;
+	width:90%;
+	margin:70px 0px 0 5%;
 	border:1px solid crimson;
-	height:150px;
+	min-height: 135px;
+	height:auto;
 	padding-top:6px;
 	background-color: dodgerblue;
+	position: relative;
 }
 .newsletter p{
 	font-family: Arial;
 	color:white;
 	padding:20px 0 0 150px;
+
 }
 #letter{
 	font-weight: bold;
@@ -156,23 +214,26 @@ h1{
 }
 #m1{
 	display:inline-block;
-	width:500px;
+	width:40%;
+	max-height:100px;
 }
 .m2{
 	display:inline-block;
 	padding:20px;
-	position: fixed;
+	position: absolute;
 	margin: 20px 0 0 10px;
+	width:40%;
 }
 #lettermail{
 	height: 40px;
-	width:500px;
+	width:80%;
 	font-size: 20px;
 }
 #butn{
 	height:46px;
 	width:50px;
 	margin-left:-5px;
+	cursor: pointer;
 	padding-top: 4px;
 	background-color: steelblue;
 	border:1px solid steelblue;

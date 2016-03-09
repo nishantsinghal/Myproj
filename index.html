@@ -3,7 +3,7 @@
 <head>
 <link rel="stylesheet" href="css/main.css"/>
 <title>Welcome to innoraft</title>
-<script src="js/jquery-2.2.1.js"></script>
+<script src="js/jquery-1.12.1.js"></script>
 </head>
 <body>
 	<header id="header">
@@ -18,8 +18,8 @@
             <div id="log">LOGIN</div>
 		</div>
 	</header>
-	<div id="main-content">
-		
+	<div id="main-content" onscroll="myFun()">
+		<div class="container">
 			<div id="main-head">
 				<center><h2>--&Delta;--&nbsp;&nbsp; Welcome to Innoraft &nbsp;&nbsp;--&Delta;--</h2></center>
 			</div>
@@ -27,17 +27,32 @@
 			<center><h1>We create digital experiences for the world's best brands.</h1></center>
 			</div>
 			<div class="footer">
-				<ul>
-				<li><p>&copy; 2016 Innoraft, See our <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a></p></li>
-				<li style="float:right;padding-right: 200px;"><p>follow us on<a href="#"><img style="margin:0px 10px 0 10px;" src="img/fb.png" /></a>
-				<a href="#"><img style="margin:0px 10px 0 0px;" src="img/tw.png"/></a>
-				<a href="#"><img style="margin:0px 10px 0 0px;" src="img/in.png"/></a></p></li>
-
-				</ul>
+				<div id="para">
+					<p>&copy; 2016 Innoraft, See our <a href="#">Terms of use</a> and <a href="#">Privacy Policy</a></p>
+				</div>
+				<div class="soid">
+				<div id="para">
+					<p>follow us on</p>
+				</div>
+				<div id="paraimg">	
+					<a href="#"><img  src="img/fb.png"  /></a>
+					<a href="#"><img  src="img/tw.png"  /></a>
+					<a href="#"><img  src="img/in.png"  /></a>
+				</div>
+				</div>
 			</div>
-		
+		</div>
 	</div>
 	<div id="dialog-1" class="fullscreen">
+		<div class="h-inner">
+			<div id="menu-trigger1" data-trigger="#sidebar">
+				<div id="menu1">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                </div>
+            </div>
+            <div id="log">LOGIN</div>
+        </div>
 		<div class="form">
 			<form>
 				<center>
@@ -54,7 +69,7 @@
 			<form>
 			<input id="lettermail" type="text" placeholder="email address"></input>
 			<input id="butn" type="submit" value="GO" />
-			<form>
+			</form>
 			</div>
 		</div>
 		<div class="sobot">
@@ -67,29 +82,6 @@
 			</center>
 		</div>
 	</div>
-	<script>
-		
-		var menuToggle=true;
-		dialog1 = document.querySelector("#dialog-1");
-		menu = document.querySelector("#menu");
-
-		menu.addEventListener("click", function(){
-			if(menuToggle){
-				showMenu();
-				menuToggle = false
-			}else{
-				menuToggle = true;
-				hideMenu();
-			}
-		});
-
-		function showMenu() {
-			dialog1.style.zIndex = 3;
-		}
-
-		function hideMenu() {
-			dialog1.style.zIndex = 0;
-		}
-	</script>
+	<script src="js/myscript.js"></script>
 </body>
 </html>
