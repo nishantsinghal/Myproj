@@ -54,10 +54,10 @@
             <div id="log">LOGIN</div>
         </div>
 		<div class="form">
-			<form>
+			<form method="POST" action="index.html">
 				<center>
-				<input id="ftext" type="text" placeholder="Email ID" name="email" /><br/>
-				<input id="ftext" type="text" placeholder="Password" name="pass"/><br/>
+				<input id="ftext" type="email" placeholder="Email ID" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  title="it must be of type example@domain.com" required/><br/>
+				<input id="ftext" type="password" placeholder="Password" name="pass" pattern="(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="password should min 8 char long and must contain special,small,capital and digit characters." required/><br/>
 				<input id="button" type="submit" value="Log In to Innoraft"/>
 				</center>
 			</form>	
@@ -67,8 +67,8 @@
 			</div>
 			<div class="m2">
 			<form>
-			<input id="lettermail" type="text" placeholder="email address"></input>
-			<input id="butn" type="submit" value="GO" />
+			<input id="lettermail" type="email" placeholder="email address" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"></input>
+			<input id="butn" type="submit" value="GO" >
 			</form>
 			</div>
 		</div>
