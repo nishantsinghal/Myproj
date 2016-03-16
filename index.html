@@ -8,7 +8,7 @@
 <body>
 	<header id="header">
 		<div class="header-inner">
-			<div id="menu-trigger" data-trigger="#sidebar">
+			<div id="menu-trigger" >
 				<div id="menu" class="line-wrap">
                     <div class="line"></div>
                     <div class="line center"></div>
@@ -18,7 +18,7 @@
             <div id="log">LOGIN</div>
 		</div>
 	</header>
-	<div id="main-content" onscroll="myFun()">
+	<div id="main-content">
 		<div class="container">
 			<div id="main-head">
 				<center><h2>--&Delta;--&nbsp;&nbsp; Welcome to Innoraft &nbsp;&nbsp;--&Delta;--</h2></center>
@@ -45,7 +45,7 @@
 	</div>
 	<div id="dialog-1" class="fullscreen">
 		<div class="h-inner">
-			<div id="menu-trigger1" data-trigger="#sidebar">
+			<div id="menu-trigger1">
 				<div id="menu1">
                     <div class="line1"></div>
                     <div class="line2"></div>
@@ -56,7 +56,7 @@
 		<div class="form">
 			<form method="POST" action="index.html">
 				<center>
-				<input id="ftext" type="email" placeholder="Email ID" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"  title="it must be of type example@domain.com" required/><br/>
+				<input id="ftext" class="txtEmail" type="text" placeholder="Email ID" name="email"  title="it must be of type example@domain.com" required/><br/>
 				<input id="ftext" class="pass" type="password" placeholder="Password" name="pass" pattern="(?=^.{8,}$)(?=.*\d)(?=.*\W+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" title="password should min 8 char long and must contain special,small,capital and digit characters." required/><br/>
 				<input id="button" type="submit" value="Log In to Innoraft"/>
 				</center>
@@ -83,5 +83,6 @@
 		</div>
 	</div>
 	<script src="js/myscript.js"></script>
+	<script src="js/emailValidate.js"></script>
 </body>
 </html>

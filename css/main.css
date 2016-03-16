@@ -17,9 +17,6 @@ body{
 	border-bottom: 1px solid silver;
 	height:90px;	
 }
-.test{
-	position:fixed;
-}
 #menu-trigger {
     width: 25px;
     height: 25px;
