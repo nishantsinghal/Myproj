@@ -17,6 +17,9 @@ body{
 	border-bottom: 1px solid silver;
 	height:90px;	
 }
+.test{
+	position:fixed;
+}
 #menu-trigger {
     width: 25px;
     height: 25px;
@@ -49,22 +52,25 @@ body{
     width: 25px;
     height: 25px;
     cursor: pointer;
+    position: relative;
 }
 .h-inner {
     padding: 40px 40px 0 0;
 }
 .line1 {
     width: 25px;
-    margin: 5px 0;
+    margin: 8px 0 0 0;
     background-color: dodgerblue;
     height: 3px;
+    position:absolute;
     -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
     transform: rotate(45deg);
 }
 .line2 {
     width: 25px;
     height: 3px;
-  	margin: 5px 0;
+    position: absolute;
+  	margin: 8px 0 0 0;
     background-color: dodgerblue;
     -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
     transform: rotate(-45deg);
@@ -237,6 +243,7 @@ h1{
 }
 .sobot{
 	margin-top: 35px; 
+	margin-bottom: 20px;
 }
 .sobot img{
 	border-radius: 20px;
